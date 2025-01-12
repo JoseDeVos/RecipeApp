@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RecipeApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Recipe App</h1>
+  </header>
+  <section id="categories">
+    <h2>Categories</h2>
+    <div class="category-buttons">
+        <button class="category-btn" data-category="breakfast">Breakfast</button>
+        <button class="category-btn" data-category="lunch">Lunch</button>
+        <button class="category-btn" data-category="dinner">Dinner</button>
+        <button class="category-btn" data-category="dessert">Dessert</button>
+    </div>
+  </section>
+  <section id="featured-recipes">
+    <h2>Featured Recipes</h2>
+    <div id="featured-container" class="recipe-container">
+        <!-- Featured recipes will be dynamically inserted here -->
+    </div>
+  </section>
+  <input type="text" id="search-bar" placeholder="Search for recipes...">
+  <div id="recipe-container"></div>
+  <div id="details-container"></div>
+  <div id="loading-spinner" class="spinner"></div>
+  <div class="rating">
+    <span class="star" data-value="1">&#9733;</span>
+    <span class="star" data-value="2">&#9733;</span>
+    <span class="star" data-value="3">&#9733;</span>
+    <span class="star" data-value="4">&#9733;</span>
+    <span class="star" data-value="5">&#9733;</span>
+  </div>
+  <section id="comments">
+    <h2>Comments</h2>
+    <div id="comment-form">
+      <textarea id="comment-input" placeholder="Leave a comment..."></textarea>
+      <button id="submit-comment">Submit</button>
+    </div>
+    <div id="comment-list">
+      <!-- Comments will be dynamically inserted here -->
+    </div>
+  </section>
+  <footer>
+    <section id="about-us">
+      <h2>About Us</h2>
+      <p>Welcome to Recipe App, your go-to place for delicious 
+        recipes from around the world. Our mission is to make cooking easy and fun for everyone.
+      </p>
+    </section>
+    <section id="newsletter">
+      <h2>Subscribe to Our Newsletter</h2>
+      <form id="newsletter-form">
+          <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+      </form>
+  </section>
+  <section id="social-media">
+    <h2>Follow Us</h2>
+    <div class="social-links">
+        <a href="#" class="social-link">Facebook</a>
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">Instagram</a>
+    </div>
+</section>
+    <p>&copy; 2025 Recipe App. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
